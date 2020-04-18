@@ -21,6 +21,24 @@ class ViewController: UIViewController {
     }
     
     // Tapped add view
-    
+    @IBAction func tapAddViewButton(_ sender: Any) {
+        
+        let newView = StackViewCell()
+        
+        newView.backgroundColor = UIColor.green
+        newView.layer.borderColor = UIColor.black.cgColor
+        newView.layer.borderWidth = 1.0
+        
+        newView.label.text = "\(count)"
+        newView.label.sizeToFit()
+        newView.label.textColor = UIColor.black
+        
+        count += 1
+        
+        newView.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+        newView.translatesAutoresizingMaskIntoConstraints = false
+        
+        stackView.addArrangedSubview(newView)
+    }
 }
 

@@ -23,6 +23,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Add View"/>
+                                        <connections>
+                                            <action selector="tapAddViewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hdz-vy-U37"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TopView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcs-Vd-rOu">
                                         <rect key="frame" x="156" y="19" width="109" height="36"/>
